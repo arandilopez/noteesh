@@ -1,0 +1,13 @@
+name: noteesh
+version: 0.1.0
+
+authors:
+  - Arandi Lopez <arandilopez.93@gmail.com>
+
+targets:
+  noteesh:
+    main: src/noteesh.cr
+
+crystal: 0.23.1
+
+license: MIT
