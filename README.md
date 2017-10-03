@@ -4,15 +4,65 @@ Tracking notes in your command line
 
 ## Installation
 
-TODO: Write installation instructions here
+### Build from code source
+
+**You should have the crystal compiler installed** check it out [here](https://crystal-lang.org/docs/installation/)
+
+1. Clone this repo
+
+```
+$ git clone https://github.com/arandilopez/noteesh.git
+```
+
+2. Run make commands
+
+```
+$ sudo make
+# then run
+$ sudo make install
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+- Check your notes
+
+```
+$ noteesh
+```
+
+- Add a new note
+
+```
+$ noteesh --add "Buy a coke"
+```
+
+- Mark a note as done
+
+```
+$ noteesh --done 1
+```
+
+- Clear your notes
+
+```
+$ noteesh --clear
+```
 
 ## Development
 
-TODO: Write development instructions here
+Run the make command to compile as development
+
+```
+$ make compile
+# then run the bin file
+$ bin/noteesh
+```
+
+Run make test to run a build and specs
+
+```
+$ make test
+```
 
 ## Contributing
 
@@ -24,4 +74,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [arandilopez](https://github.com/arandilopez) Arandi Lopez - creator, maintainer
+- [@arandilopez](https://github.com/arandilopez) Arandi Lopez - creator, maintainer
