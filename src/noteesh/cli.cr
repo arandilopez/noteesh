@@ -53,7 +53,7 @@ module Noteesh
       end
     end
 
-    private def clear()
+    private def clear
       @notes.clear
     end
 

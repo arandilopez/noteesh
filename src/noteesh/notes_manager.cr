@@ -27,7 +27,7 @@ module Noteesh
       File.read_lines(@file_path).includes? note
     end
 
-    def clear()
+    def clear
       File.open(@file_path, "w") do |file|
         file << nil
       end
