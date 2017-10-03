@@ -8,7 +8,7 @@ build:
 clean:
 	rm -f ./bin/noteesh
 compile:
-	$(CRYSTAL_BIN) build -d -s -t -p -o bin/noteesh src/noteesh.cr $(CRFLAGS)
+	$(CRYSTAL_BIN) build -d -o bin/noteesh src/noteesh.cr $(CRFLAGS)
 test: build
 	$(CRYSTAL_BIN) spec
 install: build
