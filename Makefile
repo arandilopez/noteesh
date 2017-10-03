@@ -15,4 +15,6 @@ install: build
 	mkdir -p $(PREFIX)/bin
 	cp ./bin/noteesh $(PREFIX)/bin
 reinstall: build
-	cp ./bin/noteesh $(NOTEESH_BIN) -rf
+	cp -rf ./bin/noteesh $(PREFIX)/bin
+uninstall:
+	rm $(PREFIX)/bin/noteesh
