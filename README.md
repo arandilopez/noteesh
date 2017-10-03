@@ -1,5 +1,7 @@
 # Noteesh
 
+![](https://travis-ci.org/arandilopez/noteesh.svg?branch=master)
+
 Tracking notes in your command line
 
 ## Installation
