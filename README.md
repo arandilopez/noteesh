@@ -13,7 +13,9 @@ Tracking notes in your command line
 1. Clone this repo
 
 ```
+$ cd some/path
 $ git clone https://github.com/arandilopez/noteesh.git
+$ cd noteesh/
 ```
 
 2. Run make commands
@@ -22,6 +24,16 @@ $ git clone https://github.com/arandilopez/noteesh.git
 $ sudo make
 # then run
 $ sudo make install
+```
+
+## Update
+
+- If you cloned the repo, pull new changes
+
+```
+$ cd path/to/noteesh
+$ git pull origin master
+$ sudo make reinstall
 ```
 
 ## Usage
