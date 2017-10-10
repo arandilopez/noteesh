@@ -1,6 +1,14 @@
 require "./spec_helper"
 
 describe "NotesManager" do
+  Spec.before_each do
+    File.delete(NOTEESH_TEST_FILE_PATH) if File.exists?(NOTEESH_TEST_FILE_PATH)
+    File.open(NOTEESH_TEST_2_FILE_PATH, "w") do |f|
+      f << "Buy new phone\n"
+      f << "Buy cookies for team\n"
+    end
+  end
+
   context "file does not exists" do
     it "should create new file" do
       File.exists?(NOTEESH_TEST_FILE_PATH).should eq(false)
