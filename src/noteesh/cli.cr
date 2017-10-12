@@ -1,6 +1,6 @@
 module Noteesh
   class Cli
-    def initialize()
+    def initialize
       @notes = NotesManager.new Noteesh::NOTEESH_FILE_PATH
     end
 

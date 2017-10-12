@@ -7,7 +7,7 @@ module Noteesh
       end
     end
 
-    def << (note)
+    def <<(note)
       File.open(@file_path, "a") do |file|
         file << note << "\n"
       end
@@ -39,7 +39,7 @@ module Noteesh
 
     def to_s
       File.read_lines(@file_path)
-        .map_with_index { |e, i| "#{i + 1}: #{e}" }.join("\n")
+          .map_with_index { |e, i| "#{i + 1}: #{e}" }.join("\n")
     end
   end
 end
